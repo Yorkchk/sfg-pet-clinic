@@ -5,11 +5,18 @@ import java.time.LocalDate;
 /**
  * Created by patrickskelley on Aug, 2018
  */
-public class Pet {
+public class Pet extends BaseEntity{
 
     private PetType petType;
     private Owner owner;
     private LocalDate birthDate;
+
+    public Pet(Long id, PetType petType, Owner owner, LocalDate birthDate) {
+        super(id);
+        this.petType = petType;
+        this.owner = owner;
+        this.birthDate = birthDate;
+    }
 
 
     public PetType getPetType() {
