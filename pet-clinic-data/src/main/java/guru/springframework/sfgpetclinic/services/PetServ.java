@@ -1,4 +1,6 @@
 package guru.springframework.sfgpetclinic.services;
 
-public interface PetServ {
+import guru.springframework.sfgpetclinic.model.Pet;
+
+public interface PetServ extends CrudOperations<Pet,Long>{
 }
